@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+#monogram {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+
+ul li {
+    list-style-type: none;
+    display: flex;
+}
+
