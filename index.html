@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jacob Kinley</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <script>
 
     </script>
@@ -15,20 +15,32 @@
         <nav>
             <ul>
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="index.html">
+                        Home<div id="selected"></div>
+                    </a>
                 </li>
                 <li>
-                    <a href="projects.html">Projects</a>
+                    <a href="projects.html">
+                        Projects<div id="unselected"></div>
+                    </a>
                 </li>
                 <li>
-                    <a href="Jacob_Kinley_Resume.pdf">Resume</a>
+                    <a href="resume.html">
+                        Resume<div id="unselected"></div>
+                    </a>
                 </li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main id="indexgrid">
+        <h1 id="nameme">Jacob Kinley</h1>
+        <image id="photome" src="assets/images/placeholder.png" alt="Image of Jacob Kinley"></image>
+        <p id="about">I’m a 20-year-old Human Centered Computing student at Rochester Institute of Technology. I originally came in as a computer science student, but learned that I was drawn more to the design and usability of the systems I was working on than the algorithms behind them. Halfway through my second year, I learned about a new major called Human Centered Computing and instantly knew it was the right fit. I’ve got to refactor how I approach problem-solving, but that’s just another step in the development of a better me.</p>
+        <p id="extra">I am a student ambassador for my major’s department, and I have stepped into a leadership position because of it. I oversee bringing student feedback and criticism to the department’s attention. I am also an active member of the RIT UX Club’s graphics/design team for which I help design event posters and club branding.</p>
+        <p id="philosophy">I believe programs and interfaces should augment the user. They should elicit a sense of discovery, play, and achievement. They should not feel mysterious, unwieldy, or hard to use. The end goals of programs and interfaces vary widely, but the user experiences should follow these core tenets.</p>
+        <p id="look">Feel free to have a look at my resume or reach out to me!</p>
 
     </main>
-    <footer>&copy Jacob Kinley</footer>
+    <footer>&copy Jacob Kinley | <a href="mailto:me@jacobkinley.com">Contact me!</a></footer>
 </body>
 </html>

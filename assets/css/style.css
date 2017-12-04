@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: 'Segoe UI', 'Helvetica', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(0, 0, 0, 0.66);
+    font-size: 1.05em;
+}
+
+body {
+    width: 400px;
+    margin: 0 auto;
+    /*position: relative;*/
+}
+
+/* Header/nav */
+header {
+    padding-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 70px;
+    /*position: fixed;*/
+}
+
+nav {
+    display: flex;
+}
+
+#monogram {
+    width: 65px;
+    height: 65px;
+    padding-top: 5px;
+    float: left;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 0;
+    width: 100%;
+}
+
+nav ul li {
+    flex-direction: row;
+    padding: 15px;
+    padding-top: 20px;
+    text-align: center;
+    width: 1;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.66)
+}
+
+#selected {
+    width: 100%;
+    height: 4px;
+    background: #C1272D;
+    margin-top: 4px;
+}
+
+#unselected {
+    width: 100%;
+    height: 4px;
+    background: rgb(167, 167, 167);
+    margin-top: 4px;
+    transition: background .3s;
+}
+
+nav ul li a:hover #unselected{
+    background: #C1272D;
+}
+
+/* Main content */
+main {
+    margin-top: 70px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: normal;
+}
+
+image {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    border: 2px solid #C1272D;
+}
+
+p {
+    width: 90%px;
+    margin: 0 auto;
+}
+
+.pdesc {
+    display: none;
+}
+
+main iframe {
+    display: block;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+/* Grid Layout */
+
+#indexgrid {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: 
+    'name'
+    'photo'
+    'about'
+    'extra'
+    'philosophy'
+    'look';
+    grid-gap: 20px;
+}
+
+#nameme {
+    grid-area: name;
+}
+
+#photome {
+    grid-area: photo;
+}
+
+#about {
+    grid-area: about;
+}
+
+#extra {
+    grid-area: extra;
+}
+
+#philosophy {
+    grid-area: philosophy;
+}
+
+#look {
+    grid-area: look;
+}
+
+#projectsgrid {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: 
+    'p1name'
+    'p1image'
+    'p2name'
+    'p2image'
+    'p3name'
+    'p3image';
+    grid-gap: 20px;
+}
+
+#p1title {
+    grid-area: p1name;
+}
+
+#p1image {
+    grid-area: p1image;
+}
+
+#p2title {
+    grid-area: p2name;
+}
+
+#p2image {
+    grid-area: p2image;
+}
+
+#p3title {
+    grid-area: p3name;
+}
+
+#p3image {
+    grid-area: p3image;
+}
+
+/* Footer */
+footer {
+    font-size: 11pt;
+    color: #C1272D;
+    text-align: center;
+    margin: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #C1272D;
+}
+
+footer a:hover {
+    color: rgba(0, 0, 0, 0.66);
+}
+
+@media screen and (min-width: 650px) {
+
+    body {
+        width: 620px;
+    }
+
+    .pdesc {
+        display: inline;
+    }
+
+    #indexgrid {
+        grid-template-areas: 
+        'name name'
+        'photo photo'
+        'about about'
+        'extra extra'
+        'philosophy philosophy'
+        'look look';
+    }
+
+    #projectsgrid {
+        grid-template-areas: 
+        'p1name p1name'
+        'p1image p1desc'
+        'p2name p2name'
+        'p2image p2desc'
+        'p3name p3name'
+        'p3image p3desc';
+    }
+}
+
+/* USA flag red: #bb133e */
