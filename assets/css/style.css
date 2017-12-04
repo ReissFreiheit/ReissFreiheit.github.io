@@ -131,6 +131,7 @@ main iframe {
     grid-area: photo;
     width: 300px;
     margin: 0 auto;
+    border: 2px solid #C1272D;
 }
 
 #about {
@@ -181,6 +182,7 @@ main iframe {
     grid-area: p1image;
     width: 300px;
     margin: 0 auto;
+    border: 2px solid #C1272D;
 }
 
 #p2title {
@@ -193,6 +195,7 @@ main iframe {
     grid-area: p2image;
     width: 300px;
     margin: 0 auto;
+    border: 2px solid #C1272D;
 }
 
 #p3title {
@@ -205,6 +208,7 @@ main iframe {
     grid-area: p3image;
     width: 300px;
     margin: 0 auto;
+    border: 2px solid #C1272D;
 }
 
 /* Footer */
