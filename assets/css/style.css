@@ -89,15 +89,6 @@ image {
     border: 2px solid #C1272D;
 }
 
-p {
-    width: 90%px;
-    margin: 0 auto;
-}
-
-.pdesc {
-    display: none;
-}
-
 main iframe {
     display: block;
     width: 300px;
@@ -118,7 +109,7 @@ main iframe {
     'extra'
     'philosophy'
     'look';
-    grid-gap: 20px;
+    grid-row-gap: 20px;
 }
 
 #nameme {
@@ -169,7 +160,7 @@ main iframe {
     'p2image'
     'p3name'
     'p3image';
-    grid-gap: 20px;
+    grid-row-gap: 20px;
 }
 
 #p1title {
@@ -187,7 +178,6 @@ main iframe {
 
 #p1desc {
     display: none;
-    width: 0%;
 }
 
 #p2title {
@@ -205,7 +195,6 @@ main iframe {
 
 #p2desc {
     display: none;
-    width: 0%;
 }
 
 #p3title {
@@ -223,7 +212,11 @@ main iframe {
 
 #p3desc {
     display: none;
-    width: 0%;
+}
+
+#projectsgrid a {
+    width: 300px;
+    margin: 0 auto;
 }
 
 /* Footer */
@@ -249,10 +242,6 @@ footer a:hover {
         width: 620px;
     }
 
-    .pdesc {
-        display: inline;
-    }
-
     #indexgrid {
         grid-template-areas: 
         'name name'
@@ -261,6 +250,7 @@ footer a:hover {
         'extra extra'
         'philosophy philosophy'
         'look look';
+        grid-gap: 20px;
     }
 
     #projectsgrid {
@@ -271,6 +261,7 @@ footer a:hover {
         'p2image p2desc'
         'p3name p3name'
         'p3image p3desc';
+        grid-gap: 20px;
     }
 
     #p1desc {
