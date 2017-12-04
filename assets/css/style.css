@@ -185,6 +185,11 @@ main iframe {
     border: 2px solid #C1272D;
 }
 
+#p1desc {
+    display: none;
+    width: 0%;
+}
+
 #p2title {
     grid-area: p2name;
     width: 90%;
@@ -198,6 +203,11 @@ main iframe {
     border: 2px solid #C1272D;
 }
 
+#p2desc {
+    display: none;
+    width: 0%;
+}
+
 #p3title {
     grid-area: p3name;
     width: 90%;
@@ -209,6 +219,11 @@ main iframe {
     width: 300px;
     margin: 0 auto;
     border: 2px solid #C1272D;
+}
+
+#p3desc {
+    display: none;
+    width: 0%;
 }
 
 /* Footer */
@@ -256,6 +271,21 @@ footer a:hover {
         'p2image p2desc'
         'p3name p3name'
         'p3image p3desc';
+    }
+
+    #p1desc {
+        display: inline;
+        width: 90%;
+    }
+
+    #p2desc {
+        display: inline;
+        width: 90%;
+    }
+
+    #p3desc {
+        display: inline;
+        width: 90%;
     }
 }
 
