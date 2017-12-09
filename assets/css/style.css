@@ -86,7 +86,14 @@ image {
     display: block;
     width: 300px;
     margin: 0 auto;
-    border: 2px solid #C1272D;
+    border: 2px solid rgb(167, 167, 167);
+}
+
+a image {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    border: 2px solid #C1272D;    
 }
 
 main iframe {
@@ -114,7 +121,6 @@ main iframe {
 
 #nameme {
     grid-area: name;
-    width: 90%;
     margin: 0 auto;
 }
 
@@ -122,30 +128,26 @@ main iframe {
     grid-area: photo;
     width: 300px;
     margin: 0 auto;
-    border: 2px solid #C1272D;
+    border: 2px solid rgb(167, 167, 167);
 }
 
 #about {
     grid-area: about;
-    width: 90%;
     margin: 0 auto;
 }
 
 #extra {
     grid-area: extra;
-    width: 90%;
     margin: 0 auto;
 }
 
 #philosophy {
     grid-area: philosophy;
-    width: 90%;
     margin: 0 auto;
 }
 
 #look {
     grid-area: look;
-    width: 90%;
     margin: 0 auto;
 }
 
@@ -165,7 +167,6 @@ main iframe {
 
 #p1title {
     grid-area: p1name;
-    width: 90%;
     margin: 0 auto;
 }
 
@@ -182,7 +183,6 @@ main iframe {
 
 #p2title {
     grid-area: p2name;
-    width: 90%;
     margin: 0 auto;
 }
 
@@ -219,6 +219,51 @@ main iframe {
     margin: 0 auto;
 }
 
+#p1grid {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: 
+    'p1head'
+    'explorer'
+    'p1intro'
+    'reveal'
+    'fds';
+    grid-row-gap: 20px;
+}
+
+#p1head {
+    grid-area: p1head;
+    margin: 0 auto;
+}
+
+#explorer {
+    grid-area: explorer;
+    width: 300px;
+    margin: 0 auto;
+}
+
+#p1intro {
+    grid-area: p1intro;
+    margin: 0 auto;
+}
+
+#reveal {
+    grid-area: reveal;
+    width: 300px;
+    margin: 0 auto;
+}
+
+#fds {
+    grid-area: fds;
+    margin: 0 auto;
+}
+
+p {
+    width: 330px;
+    margin: 0 auto;
+}
+
 /* Footer */
 footer {
     font-size: 11pt;
@@ -236,7 +281,7 @@ footer a:hover {
     color: rgba(0, 0, 0, 0.66);
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 640px) {
 
     body {
         width: 620px;
@@ -250,7 +295,6 @@ footer a:hover {
         'extra extra'
         'philosophy philosophy'
         'look look';
-        grid-gap: 20px;
     }
 
     #projectsgrid {
@@ -261,22 +305,77 @@ footer a:hover {
         'p2image p2desc'
         'p3name p3name'
         'p3image p3desc';
-        grid-gap: 20px;
     }
 
     #p1desc {
         display: inline;
-        width: 90%;
+        width: 200px;
     }
 
     #p2desc {
         display: inline;
-        width: 90%;
+        width: 200px;
     }
 
     #p3desc {
         display: inline;
-        width: 90%;
+        width: 200px;
+    }
+
+    #p1grid {
+        grid-template-areas: 
+        'p1head'
+        'explorer'
+        'p1intro'
+        'reveal'
+        'fds';
+    }
+
+    p {
+        width: 500px;
+    }
+
+    main iframe {
+        width: 600px;
+        height: 800px;
+    }
+}
+
+@media screen and (min-width: 840px) {
+
+    body {
+        width: 820px;
+    }
+
+    #indexgrid {
+        grid-template-areas: 
+        'name name name'
+        'photo photo photo'
+        'about about about'
+        'extra extra extra'
+        'philosophy philosophy philosophy'
+        'look look look';
+    }
+
+    #p1desc {
+        width: 300px;
+    }
+
+    #p2desc {
+        width: 300px;
+    }
+
+    #p3desc {
+        width: 300px;
+    }
+
+    #explorer {
+        width: 500px;
+    }
+
+    main iframe {
+        width: 600px;
+        height: 800px;
     }
 }
 
