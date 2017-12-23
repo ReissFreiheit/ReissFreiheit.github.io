@@ -11,6 +11,7 @@
 </head>
 <body>
     <header>
+        <div id="headwrap">
         <a href="index.html">
         <svg id="monogram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140.6 183.6"><defs><style>.cls-1{fill:#c1272d;}</style></defs><title>Asset 1</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M0,177.2,2.8,172a55,55,0,0,0,23.8,6C50,178,56,165.4,56,147.2V46.8H6.8V41.2H62V146c0,23.6-8.8,37.6-36.4,37.6A60.52,60.52,0,0,1,0,177.2ZM48.8,8.4c0-5.2,3.6-8.4,8-8.4s8,3.2,8,8.4-3.6,8.4-8,8.4S48.8,13.6,48.8,8.4Z"/><path class="cls-1" d="M59.8,101.6h.8l65.2-60.4h8l-74,68m28-29.6,4.4-4.4,48.4,61.6h-7.2Z"/></g></g></svg>
         </a>
@@ -18,30 +19,48 @@
             <ul>
                 <li>
                     <a href="index.html">
-                        Home<div id="unselected"></div>
+                        Home<div class="unselected"></div>
                     </a>
                 </li>
                 <li>
                     <a href="projects.html">
-                        Projects<div id="selected"></div>
+                        Projects<div class="selected"></div>
                     </a>
                 </li>
                 <li>
                     <a href="resume.html">
-                        Resume<div id="unselected"></div>
+                        Resume<div class="unselected"></div>
                     </a>
                 </li>
             </ul>
         </nav>
+        </div>
+        <div id="projnav">
+            <a href="p1.html">
+                <img src="assets/p1/p1image.png" alt="Project 1 Image"></img>
+            </a>
+            <a href="">
+                <img src="assets/images/placeholder.png" alt="Placeholder"></img>
+            </a>
+            <a href="">
+                <img src="assets/images/placeholder.png" alt="Placeholder"></img>
+            </a>
+        </div>
     </header>
-    <main id="p1grid">
-        <h1 id="p1head">Fluent Design File Explorer</h1>
-        <image id="explorer" src="assets/p1/explorer.png" alt="File Explorer Redesign" ></image>
-        <p id="p1intro">The Windows File Explorer is one of the most widely used interfaces in the world. When Microsoft initially announced the Fluent Design System, I was excited to see how they would implement it across the Windows 10 OS. This redesign is just one way I imagine the File Explorer could be transformed.</p>
-        <image id="reveal" src="assets/p1/reveal.png" alt="Fluent Design Reveal" ></image>
-        <p id="fds" >I wanted to focus on the features of the Fluent Design System that were easily marketable. "Reveal" provides more discoverability to the user. By highlighting the edges of button containers, the user finds out that something is interactable without the UI being cluttered with lines and borders. "Acrylic" is the blurred material effect on the sidebar. It makes the program appear to have its own space on the desktop.</p>
+    <main>
+        <h1>Fluent Design File Explorer</h1>
+        <img class="projectpic" src="assets/p1/explorer.png" alt="File Explorer Redesign" ></img>
+        <p>The Windows File Explorer is one of the most widely used interfaces in the world. When Microsoft initially announced the Fluent Design System, I was excited to see how they would implement it across the Windows 10 OS. This redesign is just one way I imagine the File Explorer could be transformed.</p>
+        <img class="projectpic" src="assets/p1/reveal.png" alt="Fluent Design Reveal" ></img>
+        <p>I wanted to focus on the features of the Fluent Design System that were easily marketable. "Reveal" provides more discoverability to the user. By highlighting the edges of button containers, the user finds out that something is interactable without the UI being cluttered with lines and borders. "Acrylic" is the blurred material effect on the sidebar. It makes the program appear to have its own space on the desktop.</p>
 
     </main>
-    <footer>&copy Jacob Kinley | <a href="mailto:me@jacobkinley.com">Contact me!</a></footer>
+    <footer>
+        <div id="footwrap">
+        <div>&copy Jacob Kinley</div>
+        <div>|</div>
+        <div><a href="mailto:me@jacobkinley.com">Contact me!</a></div>
+        </div>
+    </footer>
 </body>
 </html>

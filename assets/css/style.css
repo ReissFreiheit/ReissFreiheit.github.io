@@ -7,376 +7,190 @@
     font-size: 1.05em;
 }
 
-body {
-    width: 400px;
-    margin: 0 auto;
-}
-
 /* Header/nav */
 header {
-    padding-top: 20px;
-    margin-bottom: 20px;
     width: 100%;
-    height: 70px;
+    padding-top: 10px;
 }
 
-nav {
-    display: flex;
+#headwrap {
+    width: 360px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-gap: 0;
+}
+
+#projnav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 300px;
+    margin: 0 auto 10px;
+    grid-gap: 10px;
+}
+
+#projnav img {
+    width: 90px;
 }
 
 #monogram {
-    width: 65px;
     height: 65px;
-    padding-top: 5px;
-    float: left;
+    width: 65px;
+    margin: 0 auto;
 }
 
 nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0 auto;
-    max-width: 400px;
-    padding: 0;
-    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 250px;
+    margin: 10px auto 0;
 }
 
 nav ul li {
-    flex-direction: row;
-    padding: 15px;
-    padding-top: 20px;
+    list-style-type: none;
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+    grid-gap: 20px;
     text-align: center;
-    width: 1;
 }
 
 nav ul li a {
     text-decoration: none;
+    font-size: 15pt;
     color: rgba(0, 0, 0, 0.66)
 }
 
-#selected {
+.selected {
     width: 100%;
-    height: 4px;
-    background: #C1272D;
+    height: 3px;
+    background: #bb133e;
     margin-top: 4px;
 }
 
-#unselected {
+.unselected {
     width: 100%;
-    height: 4px;
+    height: 3px;
     background: rgb(167, 167, 167);
     margin-top: 4px;
     transition: background .3s;
 }
 
 nav ul li a:hover #unselected{
-    background: #C1272D;
+    background: #bb133e;
 }
 
 /* Main content */
 main {
-    margin-top: 70px;
+    width: 300px;
+    display: grid;
+    grid-gap: 10px;
+    margin: 0 auto;
 }
 
 h1 {
     text-align: center;
     font-weight: normal;
+    font-size: 18pt;
 }
 
-image {
+img {
     display: block;
     width: 300px;
     margin: 0 auto;
-    border: 2px solid rgb(167, 167, 167);
+    border: 2px solid #0052A5;
 }
 
-a image {
+a img {
+    border: 2px solid #bb133e;    
+}
+
+iframe {
     display: block;
-    width: 300px;
-    margin: 0 auto;
-    border: 2px solid #C1272D;    
-}
-
-main iframe {
-    display: block;
-    width: 300px;
-    height: 400px;
-    margin: 0 auto;
-}
-
-/* Grid Layout */
-
-#indexgrid {
     width: 100%;
+    height: 600px;
     margin: 0 auto;
-    display: grid;
-    grid-template-areas: 
-    'name'
-    'photo'
-    'about'
-    'extra'
-    'philosophy'
-    'look';
-    grid-row-gap: 20px;
-}
-
-#nameme {
-    grid-area: name;
-    margin: 0 auto;
-}
-
-#photome {
-    grid-area: photo;
-    width: 300px;
-    margin: 0 auto;
-    border: 2px solid rgb(167, 167, 167);
-}
-
-#about {
-    grid-area: about;
-    margin: 0 auto;
-}
-
-#extra {
-    grid-area: extra;
-    margin: 0 auto;
-}
-
-#philosophy {
-    grid-area: philosophy;
-    margin: 0 auto;
-}
-
-#look {
-    grid-area: look;
-    margin: 0 auto;
-}
-
-#projectsgrid {
-    width: 100%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-areas: 
-    'p1name'
-    'p1image'
-    'p2name'
-    'p2image'
-    'p3name'
-    'p3image';
-    grid-row-gap: 20px;
-}
-
-#p1title {
-    grid-area: p1name;
-    margin: 0 auto;
-}
-
-#p1image {
-    grid-area: p1image;
-    width: 300px;
-    margin: 0 auto;
-    border: 2px solid #C1272D;
-}
-
-#p1desc {
-    display: none;
-}
-
-#p2title {
-    grid-area: p2name;
-    margin: 0 auto;
-}
-
-#p2image {
-    grid-area: p2image;
-    width: 300px;
-    margin: 0 auto;
-    border: 2px solid #C1272D;
-}
-
-#p2desc {
-    display: none;
-}
-
-#p3title {
-    grid-area: p3name;
-    width: 90%;
-    margin: 0 auto;
-}
-
-#p3image {
-    grid-area: p3image;
-    width: 300px;
-    margin: 0 auto;
-    border: 2px solid #C1272D;
-}
-
-#p3desc {
-    display: none;
-}
-
-#projectsgrid a {
-    width: 300px;
-    margin: 0 auto;
-}
-
-#p1grid {
-    width: 100%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-areas: 
-    'p1head'
-    'explorer'
-    'p1intro'
-    'reveal'
-    'fds';
-    grid-row-gap: 20px;
-}
-
-#p1head {
-    grid-area: p1head;
-    margin: 0 auto;
-}
-
-#explorer {
-    grid-area: explorer;
-    width: 300px;
-    margin: 0 auto;
-}
-
-#p1intro {
-    grid-area: p1intro;
-    margin: 0 auto;
-}
-
-#reveal {
-    grid-area: reveal;
-    width: 300px;
-    margin: 0 auto;
-}
-
-#fds {
-    grid-area: fds;
-    margin: 0 auto;
+    border-style: solid;
+    border-color: #0052A5;
 }
 
 p {
-    width: 330px;
+    width: 100%;
     margin: 0 auto;
+    text-indent: 30px;
+    font-size: 14pt;
 }
 
 /* Footer */
 footer {
+    padding: 20px 0;
+}
+
+#footwrap {
+    width: 360px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 0;
+    grid-auto-flow: column;
+}
+
+footer div {
+    color: #bb133e;
     font-size: 11pt;
-    color: #C1272D;
+}
+
+footer div:first-of-type {
+    text-align: right;
+}
+
+footer div:nth-child(2) {
     text-align: center;
-    margin: 20px;
+}
+
+footer div:last-of-type {
+    text-align: left;
 }
 
 footer a {
     text-decoration: none;
-    color: #C1272D;
+    color: #bb133e;
 }
 
 footer a:hover {
     color: rgba(0, 0, 0, 0.66);
 }
 
-@media screen and (min-width: 640px) {
-
-    body {
-        width: 620px;
+/* Media queries */
+@media screen and (min-width: 600px) {
+    #headwrap {
+        width: 580px;
+        grid-template-columns: 20% 60% 20%;
     }
 
-    #indexgrid {
-        grid-template-areas: 
-        'name name'
-        'photo photo'
-        'about about'
-        'extra extra'
-        'philosophy philosophy'
-        'look look';
+    nav ul {
+        width: 300px;
     }
 
-    #projectsgrid {
-        grid-template-areas: 
-        'p1name p1name'
-        'p1image p1desc'
-        'p2name p2name'
-        'p2image p2desc'
-        'p3name p3name'
-        'p3image p3desc';
+    nav ul li a {
+        font-size: 18pt;
     }
 
-    #p1desc {
-        display: inline;
-        width: 200px;
+    main {
+        width: 520px;
     }
 
-    #p2desc {
-        display: inline;
-        width: 200px;
-    }
-
-    #p3desc {
-        display: inline;
-        width: 200px;
-    }
-
-    #p1grid {
-        grid-template-areas: 
-        'p1head'
-        'explorer'
-        'p1intro'
-        'reveal'
-        'fds';
-    }
-
-    p {
-        width: 500px;
-    }
-
-    main iframe {
-        width: 600px;
+    iframe {
         height: 800px;
+    }
+
+    .projectpic {
+        width: 520px;
     }
 }
 
-@media screen and (min-width: 840px) {
+@media screen and (min-width: 800px) {
 
-    body {
-        width: 820px;
-    }
-
-    #indexgrid {
-        grid-template-areas: 
-        'name name name'
-        'photo photo photo'
-        'about about about'
-        'extra extra extra'
-        'philosophy philosophy philosophy'
-        'look look look';
-    }
-
-    #p1desc {
-        width: 300px;
-    }
-
-    #p2desc {
-        width: 300px;
-    }
-
-    #p3desc {
-        width: 300px;
-    }
-
-    #explorer {
-        width: 500px;
-    }
-
-    main iframe {
-        width: 600px;
-        height: 800px;
-    }
 }
 
 /* USA flag red: #bb133e */
+/* USA flag blue: #0052A5 */
