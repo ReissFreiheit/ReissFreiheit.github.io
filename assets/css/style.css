@@ -62,22 +62,20 @@ nav ul li a {
 }
 
 .selected {
-    width: 100%;
     height: 3px;
-    background: #bb133e;
+    background-color: #bb133e;
     margin-top: 4px;
 }
 
 .unselected {
-    width: 100%;
     height: 3px;
-    background: rgb(167, 167, 167);
+    background-color: rgb(167, 167, 167);
     margin-top: 4px;
-    transition: background .3s;
+    transition: background-color .3s;
 }
 
-nav ul li a:hover #unselected{
-    background: #bb133e;
+nav ul li a:hover .unselected{
+    background-color: #bb133e;
 }
 
 /* Main content */
