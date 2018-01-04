@@ -19,6 +19,7 @@ header {
     display: grid;
     grid-template-columns: 20% 80%;
     grid-gap: 0;
+    padding-bottom: 10px;
 }
 
 #projnav {
@@ -27,6 +28,7 @@ header {
     width: 300px;
     margin: 0 auto 10px;
     grid-gap: 10px;
+    padding-bottom: 20px;
 }
 
 #projnav img {
@@ -82,7 +84,7 @@ nav ul li a:hover .unselected{
 main {
     width: 300px;
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 20px;
     margin: 0 auto;
 }
 
