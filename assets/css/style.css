@@ -7,6 +7,11 @@
     font-size: 1.05em;
 }
 
+body {
+    opacity: 0;
+    transition: opacity .25s;
+}
+
 /* Header/nav */
 header {
     width: 100%;
