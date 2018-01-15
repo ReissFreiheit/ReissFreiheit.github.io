@@ -105,6 +105,13 @@ main {
     grid-gap: 40px;
 }
 
+.projectgridc {
+    width: 300px;
+    display: grid;
+    grid-gap: 20px;
+    margin: 0 auto;
+}
+
 .proj {
     width: 100%;
     margin: 0 auto;
@@ -116,6 +123,11 @@ h1 {
     text-align: center;
     font-weight: normal;
     font-size: 18pt;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 16pt;
 }
 
 img {
@@ -223,6 +235,10 @@ footer a:hover {
 
     #projectgrid {
         width: 500px;
+    }
+
+    .projectgridc {
+        width: 520px;
     }
 
     #resume {
