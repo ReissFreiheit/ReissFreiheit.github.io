@@ -249,7 +249,7 @@ footer a:hover {
     }
 
     nav ul {
-        width: 300px;
+        width: 100%;
     }
 
     nav ul li a {
@@ -289,8 +289,8 @@ footer a:hover {
 
 @media screen and (min-width: 1000px) {
     #headwrap {
-        width: 1000px;
-        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
+        grid-template-columns: 33% 34% 33%;
         grid-gap: 0;
     }
     
