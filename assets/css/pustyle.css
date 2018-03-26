@@ -77,6 +77,12 @@ img {
     margin: 0 auto;
 }
 
+iframe {
+    width: 90%;
+    border: 2px solid #E0162B;
+    margin: 0 auto;
+}
+
 footer {
     color: #E0162B;
     width: 40%;
