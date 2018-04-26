@@ -71,6 +71,22 @@ p {
     font-size: 1rem;
 }
 
+table {
+    margin: 0 auto;
+    width: 40%;
+}
+
+table, th, td {
+    border: 1px solid #E0162B;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    height: .1rem;
+    padding: .2rem;
+}
+
 img {
     width: 90%;
     border: 2px solid #E0162B;
