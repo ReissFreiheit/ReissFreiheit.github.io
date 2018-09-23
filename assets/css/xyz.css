@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: #eee;
+    background-color: #EEE;
     font-family: 'Segoe UI', 'Helvetica', Tahoma, Geneva, Verdana, sans-serif;
     color: rgba(0, 0, 0, 0.9);
 }
@@ -169,7 +169,7 @@ img {
 }
 
 a img {
-    border: 4px solid #E0162B; 
+    border: 4px solid #E0162B;
 }
 
 iframe {
@@ -242,7 +242,7 @@ footer a:hover {
 }
 
 /* Media queries */
-@media screen and (min-width: 600px) {
+/* @media screen and (min-width: 600px) {
     #headwrap {
         width: 580px;
         grid-template-columns: 20% 60% 20%;
@@ -289,7 +289,7 @@ footer a:hover {
 
 @media screen and (min-width: 1000px) {
     #headwrap {
-        width: 100%;
+        width: 80%;
         grid-template-columns: 33% 34% 33%;
         grid-gap: 0;
     }
@@ -323,7 +323,7 @@ footer a:hover {
         height: 1200px;
     }
 
-}
+} */
 
 /* USA flag red: #E0162B */
 /* USA flag blue: #0052A5 */
