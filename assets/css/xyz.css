@@ -93,7 +93,12 @@ body {
     color: #E0162B;
 }
 .projectpic {
-    width: 100%;
+    width: 90%;
+}
+
+.prototype {
+    width: 80%;
+    height: 400px;
 }
 
 h1 {
@@ -128,6 +133,14 @@ iframe {
     border-color: #0052A5;
 }
 
+video {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    border: 3px solid #E0162B;
+    border-radius: 3px;
+}
+
 #resume {
     width: 300px;
     height: 500px;
@@ -146,6 +159,8 @@ figcaption {
 /* Footer */
 footer {
     padding: 20px 0;
+    width: 100%;
+    margin: 0 auto;
 }
 
 #footwrap {
@@ -197,6 +212,10 @@ footer a:hover {
     
     .fluentgrid {
         width: 600px;
+    }
+
+    .prototype {
+        height: 800px;
     }
 
     #resume {
