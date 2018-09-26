@@ -107,6 +107,11 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
 p {
     text-indent: 1rem;
     width: 100%;
