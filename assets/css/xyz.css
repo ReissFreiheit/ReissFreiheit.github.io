@@ -102,6 +102,26 @@ body {
     height: 400px;
 }
 
+.picon {
+    width: 50%;
+    height: 10rem;
+    margin: 0 auto;
+}
+
+.plink {
+    background-color: none;
+    transition: background-color .25s;
+    border-radius: 5%;
+}
+
+.plink:hover {
+    background-color: rgba(224, 22, 42, 0.6);
+}
+
+.plink:active {
+    background-color: rgba(224, 22, 42, 0.6);
+}
+
 h1 {
     font-size: 1.4rem;
     font-weight: 500;
@@ -124,7 +144,7 @@ img {
     width: 7rem;
     margin: 0 auto;
     border: 3px solid #E0162B;
-    border-radius: 0%;
+    border-radius: 1%;
 }
 
 a img {
@@ -232,6 +252,18 @@ footer a:hover {
     #holodemo {
         width: 510px;
         height: 300px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #indexgrid {
+        width: 1200px;
+    }
+
+    #projectgrid {
+        width: 1200px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
     }
 }
 
