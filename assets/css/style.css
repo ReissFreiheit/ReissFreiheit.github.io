@@ -53,7 +53,7 @@ header {
 
 main {
     display: grid;
-    grid-gap: 10%;
+    grid-gap: 3rem;
 }
 
 h1 {
@@ -62,6 +62,20 @@ h1 {
 
 h2 {
     font-size: 18pt;
+}
+
+figure {
+    width: 100%;
+    margin: 0 auto;
+}
+
+figcaption {
+    font-size: 10pt
+}
+
+figcaption a{
+    font-size: 10pt;
+    text-decoration: underline;
 }
 
 .project a {

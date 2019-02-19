@@ -11,83 +11,73 @@
 </head>
 <body onload="document.body.style.opacity='1'">
     <header>
-        <div id="logo">
-            <a href="index.html">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140.6 183.6"><defs><style>.cls-1{fill:#E0162B;}</style></defs><title>Asset 1</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M0,177.2,2.8,172a55,55,0,0,0,23.8,6C50,178,56,165.4,56,147.2V46.8H6.8V41.2H62V146c0,23.6-8.8,37.6-36.4,37.6A60.52,60.52,0,0,1,0,177.2ZM48.8,8.4c0-5.2,3.6-8.4,8-8.4s8,3.2,8,8.4-3.6,8.4-8,8.4S48.8,13.6,48.8,8.4Z"/><path class="cls-1" d="M59.8,101.6h.8l65.2-60.4h8l-74,68m28-29.6,4.4-4.4,48.4,61.6h-7.2Z"/></g></g></svg>
-            </a>
-        </div>
+        <span id="name"><a class="nav" href="index.html">Jacob Kinley</a></span>
+        <span id="resume"><a class="nav" href="assets/resume/resume.pdf">resume</a></span>
+        <span id="contact"><a class="nav" href="mailto:jdk1061@rit.edu">contact</a></span>
     </header>
-    <nav></nav>
     <main>
-        <div class="electoralgrid">
+        <h1>Electoral</h1>
 
-            <h1>Electoral</h1>
+        <h2>Overview</h2>
 
-            <h2>Overview</h2>
+        <p>Electoral is designed to be a mobile app that enables users to keep up to date on elections around the world. Users can favorite countries and be updated on what elections upcoming. This was a class project from Spring of 2018.</p>
 
-            <p>Electoral is designed to be a mobile app that enables users to keep up to date on elections around the world. Users can favorite countries and be updated on what elections upcoming. This was a class project from Spring of 2018.</p>
+        <h2>The Problem</h2>
 
-            <h2>The Problem</h2>
+        <p>Friends of mine who are interested in geopolitics have told me that they have a hard time keeping up with elections worldwide. It is difficult to be up to date on the news of many different countries and their elections. Electoral is meant to enable users to keep track of elections without the hassle of scanning through many different news sources for each different country.</p>
 
-            <p>Friends of mine who are interested in geopolitics have told me that they have a hard time keeping up with elections worldwide. It is difficult to be up to date on the news of many different countries and their elections. Electoral is meant to enable users to keep track of elections without the hassle of scanning through many different news sources for each different country.</p>
+        <h2>The Process</h2>
 
-            <h2>The Process</h2>
+        <p>First I talked with my friends who were interested in the idea in order to get a set of basic requirements. I ended up with the goal statement:</p>
 
-            <p>First I talked with my friends who were interested in the idea in order to get a set of basic requirements. I ended up with the goal statement:</p>
+        <p>"Electoral will list all upcoming elections in all relevant countries. Countries will be able to be filtered by regions (EU, North America, East Asia, etc.) and users will be able to create their own filters. Electoral will provide users with as much relevant information as possible about an election: which parties are running, party stances, polling data, etc."</p>
 
-            <p>"Electoral will list all upcoming elections in all relevant countries. Countries will be able to be filtered by regions (EU, North America, East Asia, etc.) and users will be able to create their own filters. Electoral will provide users with as much relevant information as possible about an election: which parties are running, party stances, polling data, etc."</p>
+        <p>I'm a visual thinker, so I needed to sketch out some basic ideas of how this might work.</p>
 
-            <p>I'm a visual thinker, so I needed to sketch out some basic ideas of how this might work.</p>
+        <figure>
+            <img class="projectpic" src="assets/electoral/details.PNG" alt="navigation sketch">
+            <figcaption>Basic navigation flow</figcaption>
+        </figure>
 
-            <figure>
-                <img class="projectpic" src="assets/electoral/details.PNG" alt="navigation sketch">
-                <figcaption>Basic navigation flow</figcaption>
-            </figure>
+        <figure>
+            <img class="projectpic" src="assets/electoral/filter.PNG" alt="filter sketch">
+            <figcaption>Filter based on region</figcaption>
+        </figure>
 
-            <figure>
-                <img class="projectpic" src="assets/electoral/filter.PNG" alt="filter sketch">
-                <figcaption>Filter based on region</figcaption>
-            </figure>
+        <figure>
+            <img class="projectpic" src="assets/electoral/settings.PNG" alt="settings sketch">
+            <figcaption>Basic settings</figcaption>
+        </figure>
 
-            <figure>
-                <img class="projectpic" src="assets/electoral/settings.PNG" alt="settings sketch">
-                <figcaption>Basic settings</figcaption>
-            </figure>
+        <figure>
+            <img class="projectpic" src="assets/electoral/switch.PNG" alt="view switch sketch">
+            <figcaption>Switch view from map to list</figcaption>
+        </figure>
 
-            <figure>
-                <img class="projectpic" src="assets/electoral/switch.PNG" alt="view switch sketch">
-                <figcaption>Switch view from map to list</figcaption>
-            </figure>
+        <p>These vague ideas needed to be refined and tested, so I made an interactive lofi prototype in InVision and asked some classmates and friends to help test the design. I had two participants.</p>
 
-            <p>These vague ideas needed to be refined and tested, so I made an interactive lofi prototype in InVision and asked some classmates and friends to help test the design. I had two participants.</p>
+        <iframe class="prototype" width="438" height="930" src="//invis.io/6YGIPZSVH24" frameborder="0" allowfullscreen></iframe>
 
-            <iframe class="prototype" width="438" height="930" src="//invis.io/6YGIPZSVH24" frameborder="0" allowfullscreen></iframe>
+        <p>I explained the purpose of the app to the users and had them explore. They each completed the SUS (System Usability Survey) and gave me feedback through comments. Their SUS scores suggested that the system was pretty easy to learn and use (80/100 and 85/100).</p>
 
-            <p>I explained the purpose of the app to the users and had them explore. They each completed the SUS (System Usability Survey) and gave me feedback through comments. Their SUS scores suggested that the system was pretty easy to learn and use (80/100 and 85/100).</p>
+        <p>I was pretty excited to see the results of the user tests. I had made something people could understand through <em>context</em> rather than a boring tutorial.</p>
 
-            <p>I was pretty excited to see the results of the user tests. I had made something people could understand through <em>context</em> rather than a boring tutorial.</p>
+        <h2>The Result</h2>
 
-            <h2>The Result</h2>
+        <figure>
+            <video width="300" height="" controls>
+                <source src="assets/electoral/HUT2.mp4" type="video/mp4">
+                Your browser is unsupported
+            </video>
+            <figcaption>An interactive version can be located <a href="https://share.protopie.io/ZXnrFBb2sxz">here</a></figcaption>
+        </figure>
+        
+        <p>The final part of this project was a HiFi prototype (above) and more user testing. A full breakdown of the project can be found <a href="puhw1.html">here</a>.</p>
 
-            <figure>
-                <video width="300" height="" controls>
-                    <source src="assets/electoral/HUT2.mp4" type="video/mp4">
-                    Your browser is unsupported
-                </video>
-                <figcaption>An interactive version can be located <a href="https://share.protopie.io/ZXnrFBb2sxz">here</a></figcaption>
-            </figure>
-            
-            <p>The final part of this project was a HiFi prototype (above) and more user testing. A full breakdown of the project can be found <a href="puhw1.html">here</a>.</p>
-
-            <p>I learned quite a bit about user testing from this project. The most important takeaway was better insight in how to take user feedback and use that to improve on a design.</p>
-            
-        </div>
-
+        <p>I learned quite a bit about user testing from this project. The most important takeaway was better insight in how to take user feedback and use that to improve on a design.</p>
+        
     </main>
     <footer>
-        <div id="footwrap">
-            <div>&copy Jacob Kinley | <a href="assets/resume/Kinley_resume_fall_2018_v3.pdf">Resume</a> | <a href="mailto:jdk1061@rit.edu">Contact me!</a></div>
-        </div>
     </footer>
 </body>
 </html>
