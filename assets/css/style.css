@@ -1,5 +1,5 @@
 * {
-    color: rgb(220, 60, 90);
+    color: rgba(0, 0, 0, 0.7);
     font-family: 'Arial Nova', Helvetica, sans-serif;
     font-size: 16pt;
     margin: 0;
@@ -37,18 +37,25 @@ header {
     display: grid;
     grid-template-columns: 20% 70% 10%;
     margin-bottom: 4rem;
+    color: rgb(220, 60, 90);
 }
 
 #name {
-
+    color: rgb(220, 60, 90);
 }
 
 #resume {
+    color: rgb(220, 60, 90);
     text-align: right;
 }
 
 #contact {
+    color: rgb(220, 60, 90);
     text-align: right;
+}
+
+span a{
+    color: rgb(220, 60, 90);
 }
 
 main {
@@ -57,24 +64,30 @@ main {
 }
 
 h1 {
+    color: rgb(220, 60, 90);
     font-size: 24pt;
 }
 
 h2 {
+    color: rgb(220, 60, 90);
     font-size: 18pt;
 }
 
+h3 {
+    color: rgb(220, 60, 90);
+}
+
 figure {
-    width: 100%;
+    width: 70%;
     margin: 0 auto;
 }
 
 figcaption {
-    font-size: 10pt
+    font-size: 14pt
 }
 
 figcaption a{
-    font-size: 10pt;
+    font-size: 14pt;
     text-decoration: underline;
 }
 
@@ -99,15 +112,22 @@ img {
     width: 100%;
 }
 
-p {
-    font-size: 14pt;
-    color: rgba(0, 0, 0, 0.7)
+iframe {
+    width: 100%;
+    min-height: 20rem;
 }
 
-.grid {
+p {
+    font-size: 14pt;
+    color: rgba(0, 0, 0, 0.7);
+    width: 80%;
+}
+
+.pgrid {
     display: grid;
     grid-gap: 5%;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 2rem;
 }
 
 .project {
@@ -116,5 +136,6 @@ p {
 }
 
 footer {
-
+    color: rgb(220, 60, 90);
+    margin: 2rem 0;
 }
