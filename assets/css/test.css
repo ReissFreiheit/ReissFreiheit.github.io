@@ -4,11 +4,11 @@ body {
 }
 
 header {
-    max-width:1200px;
+    width: 50%;
     margin: auto 0;
 }
 
 main {
-    max-width:1200px;
+    width: 50%;
     margin: auto 0;
 }
