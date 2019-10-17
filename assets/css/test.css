@@ -2,3 +2,13 @@ body {
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAJElEQVQoU2NkIBIwEqmOYcQplGJgYHhGyNcgRWBASCFIDdhEAGRNAiUP/LD6AAAAAElFTkSuQmCC) repeat;
     height: 100vh;
 }
+
+header {
+    max-width:1200px;
+    margin: auto 0;
+}
+
+main {
+    max-width:1200px;
+    margin: auto 0;
+}
