@@ -107,7 +107,7 @@ main {
 section {
     position: relative;
     display: grid;
-    padding: 5% 20%;
+    padding: 2% 20%;
 }
 
 .content-card {
@@ -128,7 +128,7 @@ section {
 }
 
 #intro {
-    padding: 10% 20% 5%;
+    padding: 15% 20% 5%;
 }
 
 #projects {
@@ -190,7 +190,6 @@ footer {
     display: grid;
     grid-gap: 1rem;
     padding: 2rem 10rem;
-    grid-template-columns: auto auto auto;
 }
 
 footer span a {
@@ -213,6 +212,12 @@ footer span a:hover {
         grid-template-columns: 1rem 60vw auto auto;
     }
 
+    section {
+        position: relative;
+        display: grid;
+        padding: 5% 20%;
+    }
+
     #projects {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -223,6 +228,16 @@ footer span a:hover {
         margin: 2rem 0;
         display: grid;
         grid-gap: 1rem;
+        grid-template-columns: auto auto auto;
+    }
+
+    footer {
+        background-color: #CA6A82;
+        color: rgb(247, 245, 242);
+        width: 100%;
+        display: grid;
+        grid-gap: 1rem;
+        padding: 2rem 10rem;
         grid-template-columns: auto auto auto;
     }
 }
