@@ -87,7 +87,7 @@ nav {
     width: 80%;
     margin: 0 auto;
     grid-gap: 1rem;
-    grid-template-columns: 1rem 60vw auto auto;
+    grid-template-columns: 1rem auto auto auto;
 }
 
 nav span a {
@@ -133,7 +133,7 @@ section {
 
 #projects {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 2rem;
 }
 
@@ -156,7 +156,7 @@ section {
     margin: 2rem 0;
     display: grid;
     grid-gap: 1rem;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto;
 }
 
 figure {
@@ -186,6 +186,7 @@ iframe {
 footer {
     background-color: #CA6A82;
     color: rgb(247, 245, 242);
+    width: 100%;
     display: grid;
     grid-gap: 1rem;
     padding: 2rem 10rem;
@@ -200,4 +201,28 @@ footer span a {
 
 footer span a:hover {
     border-width: .1rem;
+}
+
+@media screen and (min-width: 1000px) {
+
+    nav {
+        display: grid;
+        width: 80%;
+        margin: 0 auto;
+        grid-gap: 1rem;
+        grid-template-columns: 1rem 60vw auto auto;
+    }
+
+    #projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+    }
+
+    .project-images {
+        margin: 2rem 0;
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: auto auto auto;
+    }
 }
