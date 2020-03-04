@@ -186,7 +186,6 @@ iframe {
 footer {
     background-color: #CA6A82;
     color: rgb(247, 245, 242);
-    width: 100%;
     display: grid;
     grid-gap: 1rem;
     padding: 2rem 5%;
@@ -234,10 +233,9 @@ footer span a:hover {
     footer {
         background-color: #CA6A82;
         color: rgb(247, 245, 242);
-        width: 100%;
         display: grid;
         grid-gap: 1rem;
-        padding: 2rem 10rem;
-        grid-template-columns: auto auto auto;
+        padding: 2rem;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
