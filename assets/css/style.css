@@ -189,7 +189,7 @@ footer {
     width: 100%;
     display: grid;
     grid-gap: 1rem;
-    padding: 2rem 10rem;
+    padding: 2rem 5%;
 }
 
 footer span a {
