@@ -3,46 +3,57 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jacob Kinley | Design for humans</title>
+    <title>Jacob Kinley</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <script>
-
-    </script>
+    <link rel="icon" href="assets/images/squarebox.svg">
 </head>
-<body onload="document.body.style.opacity='1'">
+<body>
     <header>
-        <span id="name"><a class="nav" href="index.html">Jacob Kinley</a></span>
-        <span id="resume"><a class="nav" href="assets/resume/resume.pdf">resume</a></span>
-        <span id="contact"><a class="nav" href="mailto:jdk1061@rit.edu">contact</a></span>
+        <nav>
+            <img class="logo" src="assets/images/squareboxnoback.svg">
+            <span><a href="index.html">Jacob Kinley</a></span>
+            <span><a href="assets/resume/resume.pdf">resume</a></span>
+            <span><a href="mailto:jdk1061@rit.edu">contact</a></span>
+        </nav>
     </header>
     <main>
-        <h1>Jacob Kinley is a UX designer and a 5th year Human-Centered Computing student 🎓 at Rochester Institute of Technology.</h1>
-        <h2>Works</h2>
-        <div class="pgrid">
-            <div class="project">
-                <h3>
-                    PAMS | Prototyping, UI, Iterations
-                </h3>
-                <iframe width="100%" src="https://sway.com/s/1as8lT2aOhYufxz3/embed" frameborder="0" marginheight="0" marginwidth="0" max-width="100%" sandbox="allow-forms allow-modals allow-orientation-lock allow-popups allow-same-origin allow-scripts" scrolling="no" style="border: none; max-width: 100%; max-height: 100vh" allowfullscreen mozallowfullscreen msallowfullscreen webkitallowfullscreen></iframe>
+        <section id="intro">
+            <h2>Hello! I'm Jake. I'm a Human Centered Computing grad from RIT 🎓. I make user friendly designs with squares and boxes. <img class="logo" src="assets/images/squareboxnoback.svg"></h2>
+        </section>
+        <section id='projects'>
+            <div class="content-card">
+                <a class="image-link" href="warhammer-community-app/index.html"><img src="assets/images/wcmobileTN.png"></a>
+                <a href="warhammer-community-app/index.html">Warhammer Community App</a>
+                <p>Mobile app of the Warhammer Community Website</p>
             </div>
-            <div class="project">
-                <h3>
-                    Car Dashboard and Console | Prototyping, User Research
-                </h3>
-                <iframe width="100%" src="https://sway.com/s/Hv7p8wxD58UzDBve/embed" frameborder="0" marginheight="0" marginwidth="0" max-width="100%" sandbox="allow-forms allow-modals allow-orientation-lock allow-popups allow-same-origin allow-scripts" scrolling="no" style="border: none; max-width: 100%; max-height: 100vh" allowfullscreen mozallowfullscreen msallowfullscreen webkitallowfullscreen></iframe>
+            <div class="content-card">
+                <a class="image-link" href="pics-pams/index.html"><img src="assets/images/picspamsTN.png"></a>
+                <a href="pics-pams/index.html">PICS Asset Management Services</a>
+                <p>Front-end web app design for PICS Telecom</p>
             </div>
-            <div class="project">
-                <h3>
-                    Electoral | User Testing, Prototyping
-                </h3>
-                <iframe width="100%" src="https://sway.com/s/q33HwLq7x5axx8te/embed" frameborder="0" marginheight="0" marginwidth="0" max-width="100%" sandbox="allow-forms allow-modals allow-orientation-lock allow-popups allow-same-origin allow-scripts" scrolling="no" style="border: none; max-width: 100%; max-height: 100vh" allowfullscreen mozallowfullscreen msallowfullscreen webkitallowfullscreen></iframe>
+            <div class="content-card">
+                <a class="image-link" href="car-dash-console/index.html"><img src="assets/images/carTN.png"></a>
+                <a href="car-dash-console//index.html">Car Dashboard & Console UI Design</a>
+                <p>Electric car dashboard and center console design</p>
             </div>
-        </div>
-        <h2>About Me</h2>
-        <p>I used to have a Windows Phone, and I still miss it. I learned that good ideas can lose. Help me change that.</p>
+        </section>
+        <section>
+            <div class="content-card">
+                <div id="bio">
+                    <h2 class='title2'>Bio</h2>
+                    <p>Computers are awesome. I've known this since I was a kid.</p>
+                    <p>Computers are cryptic. I learned this from watching my family, friends, and others constantly get frustrated by poorly designed experiences.</p>
+                    <p>I chose Human Centered Computing so that I could change the reality of computing.</p>
+                    <p>I’m looking for a full-time UX position. If you want to help me help users, <a href='mailto:jdk1061@rit.edu'>reach out!</a></p>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-        &copy; Jacob Kinley
+        <span><a href='index.html'>&copy Jacob Kinley</a></span>
+        <span><a href='mailto:jdk1061@rit.edu'>Email: jdk1061@rit.edu</a></span>
+        <span><a href='https://www.linkedin.com/in/jacob-kinley-906266131/'>LinkedIn</a></span>
     </footer>
+    <script src="scripts/zenscroll-latest/zenscroll-min.js"></script>
 </body>
 </html>
