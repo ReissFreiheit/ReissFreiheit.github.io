@@ -18,7 +18,7 @@ Green: #829FA6
 }
 
 body {
-    background-color: hsl(75, 27%, 94%);
+    background-color: hsl(0, 0%, 95%);
     margin: 0 auto;
     width: 100%;
     scroll-behavior: smooth;
@@ -32,7 +32,7 @@ header {
     top: 0rem;
     width: 100%;
     margin: 0 auto;
-    background-color: hsla(69, 26%, 95%, 0.875);
+    background-color: hsla(0, 0%, 95%, 0.875);
     backdrop-filter: blur(1px);
     box-shadow: 0 .5rem 1rem hsla(0, 0%, 0%, 0.2);
     z-index: 3;
@@ -113,7 +113,7 @@ section {
 .content-card {
     margin: 0 auto;
     padding: 1rem;
-    background-color: hsla(69, 28%, 95%, 0.875);
+    background-color: hsla(0, 0%, 95%, 0.875);
     backdrop-filter: blur(1px);
     box-shadow: 0 .3rem .7rem hsla(0, 0%, 0%, 0.2);
     z-index: 2;
@@ -185,14 +185,14 @@ iframe {
 
 footer {
     background-color: #CA6A82;
-    color: rgb(247, 245, 242);
+    color: rgb(240, 240, 240);
     display: grid;
     grid-gap: 1rem;
     padding: 2rem 5%;
 }
 
 footer span a {
-    color: rgb(247, 245, 242);
+    color: rgb(240, 240, 240);
     border-bottom: 0 solid;
     transition: border-width .1s;
 }
@@ -232,7 +232,7 @@ footer span a:hover {
 
     footer {
         background-color: #CA6A82;
-        color: rgb(247, 245, 242);
+        color: rgb(240, 240, 240);
         display: grid;
         grid-gap: 1rem;
         padding: 2rem;
