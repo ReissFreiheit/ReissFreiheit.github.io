@@ -1,0 +1,19 @@
+/*
+Square Grid
+*/
+background-image: repeating-linear-gradient(90deg, hsla(57,0%,42%,0.09) 0px, hsla(57,0%,42%,0.09) 1px,transparent 1px, transparent 60px),repeating-linear-gradient(0deg, hsla(57,0%,42%,0.09) 0px, hsla(57,0%,42%,0.09) 1px,transparent 1px, transparent 60px),repeating-linear-gradient(0deg, hsla(57,0%,42%,0.09) 0px, hsla(57,0%,42%,0.09) 1px,transparent 1px, transparent 10px),repeating-linear-gradient(90deg, hsla(57,0%,42%,0.09) 0px, hsla(57,0%,42%,0.09) 1px,transparent 1px, transparent 10px),linear-gradient(90deg, rgb(20,20,20),rgb(20,20,20));
+
+/*
+Subtle Grid with diagonal
+*/
+background-image: repeating-linear-gradient(90deg, hsla(240,0%,35%,0.05) 0px, hsla(240,0%,35%,0.05) 1px,transparent 1px, transparent 91px),repeating-linear-gradient(45deg, hsla(240,0%,35%,0.05) 0px, hsla(240,0%,35%,0.05) 1px,transparent 1px, transparent 91px),repeating-linear-gradient(0deg, hsla(240,0%,35%,0.05) 0px, hsla(240,0%,35%,0.05) 1px,transparent 1px, transparent 61px),repeating-linear-gradient(90deg, hsla(240,0%,35%,0.05) 0px, hsla(240,0%,35%,0.05) 1px,transparent 1px, transparent 61px),repeating-linear-gradient(90deg, hsla(240,0%,35%,0.05) 0px, hsla(240,0%,35%,0.05) 1px,transparent 1px, transparent 16px),repeating-linear-gradient(0deg, hsla(240,0%,35%,0.05) 0px, hsla(240,0%,35%,0.05) 1px,transparent 1px, transparent 16px),linear-gradient(90deg, hsl(83,8%,8%),hsl(83,8%,8%));
+
+/*
+Tiny Grid
+*/
+background-image: repeating-linear-gradient(0deg, hsla(202,0%,65%,0.08) 0px, hsla(202,0%,65%,0.08) 1px,transparent 1px, transparent 11px),repeating-linear-gradient(90deg, hsla(202,0%,65%,0.08) 0px, hsla(202,0%,65%,0.08) 1px,transparent 1px, transparent 11px),linear-gradient(90deg, rgb(20,20,20),rgb(20,20,20));
+
+/*
+Big Grid
+*/
+background-image: repeating-linear-gradient(0deg, rgb(17, 17, 17) 0px, rgb(17, 17, 17) 1px,transparent 1px, transparent 51px),repeating-linear-gradient(90deg, rgb(17, 17, 17) 0px, rgb(17, 17, 17) 1px,transparent 1px, transparent 51px),linear-gradient(90deg, hsl(49,0%,3%),hsl(49,0%,3%));
