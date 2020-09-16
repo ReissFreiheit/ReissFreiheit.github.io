@@ -43,9 +43,9 @@ h2 {
 
 header {
     width: 100%;
-    background-color: #222;
     display: grid;
-    border-bottom: 1px solid #444;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px) brightness(80%);
 }
 
 nav {
@@ -58,13 +58,18 @@ body {
     width: 100%;
     background-color: #222;
     display: grid;
+    background-image: url(../images/galaxy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 section {
-    margin: 0 auto;
+    margin: 20rem auto;
     display: grid;
     grid-gap: 1rem;
     align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px) brightness(50%);
 }
 
 .divider {
@@ -79,19 +84,13 @@ section {
     grid-auto-flow: column;
 }
 
-.box {
-    position: relative;
-    width: 300px;
-    height: 150px;
-}
-
 .boxBack {
     width:100%;
     height:100%;
 }
 
 .box-label {
-    border: 1px solid #444;
+    border: 1px solid rgba(255, 255, 255, 0.4);
     display: grid;
     align-items: center;
     width: 4rem;
