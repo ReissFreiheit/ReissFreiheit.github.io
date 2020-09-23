@@ -29,43 +29,45 @@ html {
     color: #A2FFFF;
 } */
 
-h1 {
+h1, h2 {
     font-family: 'MajorMonoDisplay';
     font-weight: 100;
-    font-size: 2rem;
-    margin: 0 auto;
-    display: block;
+    font-size: 1.5rem;
     color: #FFA2A2;
-}
-
-h2 {
-    font-family: 'MajorMonoDisplay';
-    font-weight: 100;
-    font-size: 2rem;
-    margin: 0 auto;
-    display: block;
 }
 
 header {
     width: 100%;
     display: grid;
+    position: fixed;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-    /* backdrop-filter: blur(10px) brightness(80%); */
+    z-index: 1;
+    backdrop-filter: blur(5px) brightness(50%);
 }
 
 nav {
     margin: 1rem auto;
-    display: grid;
+    width: 90%;
+    /* display: grid;
     grid-auto-flow: column;
-    grid-gap: 4rem;
+    grid-gap: 2rem; */
 }
 
 nav a {
     font-family: 'MajorMonoDisplay';
     font-weight: 100;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-decoration: none;
-    margin: 0 auto;
+    margin: 0 1rem;
+}
+
+nav a:first-child {
+    color: #FFA2A2;
+    float: left;
+}
+
+nav a:last-child {
+    float: right;
 }
 
 body {
@@ -77,18 +79,39 @@ body {
     background-size: cover; */
 }
 
+.body-wrap {
+    width: 90%;
+    margin: 0 auto;
+}
+
 section {
-    margin: 20rem auto;
+    margin: 5rem auto;
+    padding: 1rem;
     display: grid;
     grid-gap: 1rem;
-    align-items: center;
     border: 1px solid rgba(255, 255, 255, 0.5);
     /* backdrop-filter: blur(10px) brightness(50%); */
 }
 
-.category {
-    margin: 1rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-auto-flow: column;
+@media screen and (min-width: 500px) {
+    nav {
+        grid-gap: 4rem;
+        width: 60%;
+    }
+
+    nav a {
+        font-size: 1.5rem;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    section {
+        margin: 5rem auto;
+    }
+
+    .body-wrap {
+        width: 60%;
+    }
 }
