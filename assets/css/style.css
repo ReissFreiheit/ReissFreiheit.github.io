@@ -20,7 +20,7 @@ main {
     display: flexbox;
     margin: 10rem auto 4rem;
     background-color: rgb(16, 16, 16);
-    border: 1px solid rgb(255, 234, 164);
+    border: 1px solid #ff00ff;
 }
 
 h1 {
