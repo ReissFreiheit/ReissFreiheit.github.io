@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla&family=Vollkorn&display=swap');
 
 :root {
-    --background-default: #292629;
-    --background-muted: #3d383d;
-    --foreground-default: #EBF5E1;
-    --foreground-muted: #C4CCBC;
-    --color-accent: #75d9e0;
+    --background-default: #000000;
+    --background-muted: rgba(255,255,255,.1);
+    --foreground-default: rgba(255,255,255,1);
+    --foreground-muted: rgba(255,255,255,.8);
+    --color-accent: #75e0ae;
     --color-muted-accent: #a37ca1;
-    --color-contrast: #58f56d;
-    --color-bright: #e075db;
+    --color-contrast: #58f0f5;
+    --color-bright: #df64d8;
     --typeface-default: 'Karla', sans-serif;
     --typeface-serif: 'Vollkorn', serif;
+    --typeface-mono: monospace;
     --default-text-size: 20px;
     --h1-text-size: 2rem;
     --h2-text-size: 1.5rem;
@@ -21,6 +22,7 @@
     --body-line-height: 140%;
     --intro-text-size: 2rem;
     --intro-line-height: 120%;
+    --size-pixel: 1px;
     --size-extra-small: 0.25rem;
     --size-small: 0.5rem;
     --size-medium: 1rem;
@@ -34,6 +36,10 @@
 * {
     margin: 0;
     padding: 0;
+}
+
+*, :after, :before {
+    box-sizing: border-box;
 }
 
 html {
@@ -126,7 +132,18 @@ a:hover {
     display: flex;
     flex-direction: column;
     gap: var(--size-medium);
-    border-radius: var(--border-radius);
     padding: var(--container-padding);
-    background-color: var(--background-muted);
+}
+
+.container-border {
+    display: grid;
+    border: var(--size-pixel) solid var(--foreground-muted);
+}
+
+.dbox {
+    width: var(--size-small);
+    height: var(--size-small);
+    background-color: var(--foreground-muted);
+    position: absolute;
+    z-index: 2;
 }
